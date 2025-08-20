@@ -51,7 +51,7 @@
         }
 
         $table = "login";
-        $sql = "SELECT admin_id, name, faculty_id, email, username, COALESCE(status,'inactive') AS status, created_at FROM $table ORDER BY admin_id DESC";
+        $sql = "SELECT admin_id, name, faculty_id, email, username, COALESCE(status,'inactive') AS status, created_at FROM $table ORDER BY admin_id ASC";
         $result = $conn->query($sql);
 
         echo "<div class='header'>";
